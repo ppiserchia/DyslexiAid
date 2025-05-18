@@ -17,9 +17,9 @@ struct TipsView: View {
             ZStack {
                 Color("Background")
                     .ignoresSafeArea()
-                
+            
+                //MARK: Icon and title
                 VStack {
-                    // Icon and Title
                     VStack(spacing: 20) {
                         Image(systemName: "sparkles")
                             .font(.system(size: 60))
@@ -31,9 +31,10 @@ struct TipsView: View {
                             .foregroundStyle(.black)
                             .padding(.bottom, 20)
                         
-                        // List of Results
+                        //MARK: List of options
                         VStack(spacing: 15) {
-                            // Alignment Option
+                            
+                            //MARK: 1) Alignment Option
                             HStack {
                                 Text("Alignment")
                                     .font(.custom("OpenDyslexic-Regular", size: 15))
@@ -56,7 +57,7 @@ struct TipsView: View {
                                 AlignmentView(showModal: $showAlignmentSheet)
                             }
                             
-                            // Font Choice Option
+                            //MARK: 2) Font Choice
                             HStack {
                                 Text("Font Choice")
                                     .font(.custom("OpenDyslexic-Regular", size: 15))
@@ -79,8 +80,8 @@ struct TipsView: View {
                                 FontChoiceView(showModal: $showFontChoiceSheet)
                                 //                            }
                             }
-                            //Contrast
                             
+                            //MARK: 3) Contrast
                             HStack {
                                 Text("Contrast")
                                     .font(.custom("OpenDyslexic-Regular", size: 15))
@@ -102,6 +103,8 @@ struct TipsView: View {
                             .sheet(isPresented: $showHighContrastLevelSheet) {
                                 HighContrastLevel(showModal: $showHighContrastLevelSheet)
                             }
+                            
+                            //MARK: 4) Line Height
                             HStack {
                                 Text("Line Height")
                                     .font(.custom("OpenDyslexic-Regular", size: 15))
@@ -139,7 +142,7 @@ struct TipsView: View {
     struct TipsView_Previews: PreviewProvider {
         static var previews: some View {
             TipsView()
-                .previewDevice("iPhone 13")
+                .previewDevice("iPhone 16 Pro")
         }
     }
 

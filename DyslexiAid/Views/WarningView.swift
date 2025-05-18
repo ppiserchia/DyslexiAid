@@ -14,8 +14,8 @@ struct WarningView: View {
     @State private var capturedImage: UIImage? = nil
     @State private var wordCount: Int = 0
     @State private var analysisResult: String = ""
-    @State private var navigateToPositiveView: Bool = false // Per PositiveView
-    @State private var navigateToNegativeResultView: Bool = false // Per NegativeResultView
+    @State private var navigateToPositiveView: Bool = false // For PositiveView
+    @State private var navigateToNegativeResultView: Bool = false // For NegativeResultView
     
     var body: some View {
 
@@ -60,21 +60,21 @@ struct WarningView: View {
                             .padding(25)
                     }
                     
-                    // Mostra il risultato se presente
                     
                 }
                 
-                // Navigazione condizionata
+                // Navigation divided in two:
+//                1) If the words in the captured image are ≤ 150:
                 NavigationLink(
-                    destination: PositiveView(wordCount: $wordCount), // La tua prossima View (per parole ≤ 150)
+                    destination: PositiveView(wordCount: $wordCount),
                     isActive: $navigateToPositiveView
                 ) {
                     EmptyView()
                 }
                 
+//               2) If the words in the captured image are > 150:
                 NavigationLink(
-                    destination: NegativeView(wordCount: $wordCount), // La view per parole > 150
-                    isActive: $navigateToNegativeResultView
+                    destination: NegativeView(wordCount: $wordCount), isActive: $navigateToNegativeResultView
                 ) {
                     EmptyView()
                 }
@@ -170,7 +170,7 @@ extension CameraScannerView {
     }
 }
 
-// View per la prossima schermata con successo
+// Positive View
 struct PositiveView: View {
     @State var PassToTipsView: Bool = false
     @Binding var wordCount: Int
@@ -227,7 +227,7 @@ struct PositiveView: View {
     }
 }
 
-// View per la schermata negativa
+// NegativeView
 struct NegativeView: View {
 @State var PassToTipsView = false
     @Binding var wordCount: Int
