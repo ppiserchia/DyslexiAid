@@ -16,7 +16,7 @@ struct EnoughLineHeight : View {
             VStack {
                 HStack {
                     Button(action: {
-                        showModal = false // Chiude la sheet
+                        showModal = false // Closes the sheet
                     }) {
                         Image(systemName: "xmark.circle.fill")
                             .font(.largeTitle)

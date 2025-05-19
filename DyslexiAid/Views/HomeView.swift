@@ -37,31 +37,6 @@ struct HomeView: View {
         }
     }
 }
-                    
-                    /// Alert modifier
-                    //                    .alert("Warning", isPresented: $showAlert) {
-                    //                        Button("I'm ready!", role: .destructive) {
-                    //                            navigateToCameraView = true
-                    //                        }
-                    //
-                    //                        Button("Cancel", role: .cancel) {
-                    //                            print("Cancelling action...")
-                    //                        }
-                    //
-                    //                    } message: {
-                    //                        Text("Please, keep your iPhone vertically from the sheet!")
-                    //                    }
-                    
-                    //                    NavigationLink(destination: CameraView(capturedImage: $capturedImage), isActive: $navigateToCameraView) {
-                    //                        EmptyView()
-                    //                    }
-                    //                }
-                    //                }
-                    
-                    ///NavigationLink that leads to the WarningView
-                    
-                    
-                    
                     #Preview {
                         HomeView()
                     }
