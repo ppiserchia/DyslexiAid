@@ -1,5 +1,5 @@
 # DyslexiAid
-**DyslexiAid** is an iOS App that helps dyslexic people understand if a book is readable or not by them.
+**DyslexiAid** is an iOS App that helps dyslexic people understand if a book is easier to read for them.
 
 ## How does it work?
 When the app is opened, the user will see a button. Once clicked, it will lead to a view that warns the user to keep the phone vertically from the sheet. 
