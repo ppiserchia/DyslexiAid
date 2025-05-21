@@ -28,10 +28,15 @@ The **main topics** of the tips are:
 
 ## Why are we taking into account the number of words? 
 
+
 ## Frameworks
 * SwiftUI
 * Vision
 * UIKit
+
+## Credits and Licensing
+
+
 
 ## Team
 DyslexiAid, 
