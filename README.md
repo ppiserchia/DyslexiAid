@@ -18,6 +18,15 @@ If the **number of words is > 160**, then the results are **negative**. The user
 
 Whatever the result, the user has the option of being able to access tips by clicking to the **"See some tips!"**.
 
+The **main topics** of the tips are:
+* **Alignment**
+* **Font Choice**
+* **Contrast**
+* **Line Height**
+
+<image src="Screenshots/AlignmentView.PNG" width=200 height=430> <image src="Screenshots/FontChoiceView.PNG" width=200 height=430> <image src="Screenshots/ContrastView.PNG" width=200 height=430> <image src="Screenshots/LineSpacingView.PNG" width=200 height=430>
+
+## Why are we taking into account the number of words? 
 
 ## Frameworks
 * SwiftUI
