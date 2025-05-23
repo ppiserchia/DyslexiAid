@@ -27,7 +27,7 @@ The **main topics** of the tips are:
 <image src="Screenshots/AlignmentView.PNG" width=200 height=430> <image src="Screenshots/FontChoiceView.PNG" width=200 height=430> <image src="Screenshots/ContrastView.PNG" width=200 height=430> <image src="Screenshots/LineSpacingView.PNG" width=200 height=430>
 
 ## Why are we taking into account the number of words? 
-Based on a research that we did, we found out that dyslexic people are able to read pages of text that have around 150-160 words. There has to be enough space between one letter and another.
+Based on a research that we did, we found out that dyslexic people find it easier to read pages of text that have around 150-160 words. There also has to be enough space between one word and another.
 
 Sources: [What to Consider When Designing for Dyslexia](https://uxplanet.org/what-to-consider-when-designing-for-dyslexia-b99d373905ac)
 
