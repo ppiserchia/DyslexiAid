@@ -50,6 +50,13 @@ Sources: [What to Consider When Designing for Dyslexia](https://uxplanet.org/wha
 * Vision
 * UIKit
 
+## Installation
+
+To install and run DyslexiAid on your device:
+* Clone the repository from GitHub.
+* Open the project in Xcode.
+* Build and run the project on your iOS device or simulator.
+
 ## Credits and Licensing
 Font used in the project is [OpenDyslexic](https://opendyslexic.org) by Abbie Gonzalez, an open source one.
 
